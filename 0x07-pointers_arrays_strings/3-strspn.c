@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strspn - Gets the length of a prefix substring.
- * @s: The string to search within.
- * @accept: The characters to match in s.
- *
- * Return: The number of bytes in s which consist only of bytes from accept.
+ * _strspn  - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (success)
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int i, n, value;
@@ -19,9 +19,8 @@ for (n = 0; accept[n] != '\0'; n++)
 if (accept[n] == s[i])
 {
 value++;
-break;
 }
 }
 }
-return (value);
+return (0);
 }
